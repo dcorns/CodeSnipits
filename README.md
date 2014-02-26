@@ -3,4 +3,4 @@ CodeSnipits
 
 Pieces of code just because
 
-stringify-factor down code to transform 'Hello World!' to 'H e l l o W o r l d !'
+spacify-factor down a function to transform 'the input string' to 't h e i n p u t s t r i n g'
