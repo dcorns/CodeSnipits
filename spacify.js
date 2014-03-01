@@ -1,22 +1,22 @@
-function spacify(str){
+function spacify(stringIn){
 
 //break up the string into an array
-	var sa = str.split('');
-	sa = remsp(sa);
+	var stringArray = stringIn.split('');
+	stringArray = remSpaces(stringArray);
 	//remove space elements with recursion
-	function remsp(sar){
+	function remSpaces(stringArrayIn){
 		
-		sp = sar.indexOf(' ');
-		if(sp >- 1){
-			sar.splice(sp,1);
-			remsp(sar);
+		spaceIdx = stringArrayIn.indexOf(' ');
+		if(spaceIdx > -1){
+			stringArrayIn.splice(spaceIdx,1);
+			remSpaces(stringArrayIn);
 		}
 
-		return sar;
+		return stringArrayIn;
 	}
 	//Combine elements with spaces
-		sa = sa.join(' ');
-		return sa;
+	var stringOut = stringArray.join(' ');
+	return stringOut;
 }
 
 
